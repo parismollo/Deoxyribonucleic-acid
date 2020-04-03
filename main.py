@@ -1,5 +1,6 @@
 from toolkit import DnaToolKit
 
-
 tk = DnaToolKit()
-print(tk.validate_sequence('aAtTcC'))
+dna = tk.generate_dna_sequence(10)
+dna = tk.validate_sequence(dna)
+print(tk.nucleotide_frequency(dna))
